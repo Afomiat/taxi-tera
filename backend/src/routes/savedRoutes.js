@@ -110,6 +110,7 @@ const router = express.Router();
 
  router.post('/savedRoutes', verifyToken, saveRoute);
  router.get('/savedRoutes', verifyToken, getSavedRoutes);
+ 
  router.delete('/savedRoutes/:id', deleteSavedRoute);
 
  export default router;
